@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-family: Barlow Semi Condensed;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  max-width: 1100px;
+  margin: 100px auto;
+}
+
+.qoutes,
+.bold {
+  padding: 0 20px 15px 20px;
+}
+
+.bold {
+  font-weight: 600;
+  font-size: x-large;
+}
+
+.verified {
+  opacity: 0.5;
+}
+
+.title-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.title-name p {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper .daniel {
+  grid-area: 1 / 1 / span 1 / span 2;
+  background-color: hsl(263, 55%, 52%);
+  color: white;
+  border-radius: 10px;
+}
+
+.img-title-name {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 10px;
+}
+
+.img-title-name img {
+  border: 2px solid white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.wrapper .kira {
+  grid-area: 1 / 4 / span 2 / span 1;
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
+}
+
+.wrapper .patrick {
+  grid-area: 2 / 2 / span 1 / span 2;
+  background-color: hsl(219, 29%, 14%);
+  color: white;
+  border-radius: 10px;
+}
+
+.wrapper .jeanette {
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
+}
+
+.wrapper .jonathan {
+  background-color: hsl(217, 19%, 35%);
+  color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 375px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .wrapper .daniel {
+    grid-area: 1 / 1 / span 1 / span 1;
+  }
+  .wrapper .jonathan {
+    grid-area: 2 / 1 / span 1 / span 1;
+  }
+  .wrapper .jeanette {
+    grid-area: 3 / 1 / span 1 / span 1;
+  }
+  .wrapper .patrick {
+    grid-area: 4 / 1 / span 1 / span 1;
+  }
+  .wrapper .kira {
+    grid-area: 5 / 1 / span 1 / span 1;
+  }
+}
